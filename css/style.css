@@ -56,6 +56,16 @@ header {
     border-top: 2px solid red;
 }
 
+#content{
+  background:url('../images/oat_tower.png') -25px -50px;
+  position:fixed ;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100%;
+  background-size: calc(100% + 50px);
+}
+
 footer {
 	width: 100%;
 	height: 4em;
