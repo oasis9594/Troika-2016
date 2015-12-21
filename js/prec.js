@@ -1,15 +1,17 @@
-//function opacityfull2(id1, id2) {
-//	var x = document.getElementById(id1);
-//	var y = document.getElementById(id2);
-//	x.style.opacity = .6;
-//	x.style.height = "20%";
-//	x.style.width = "20%";
-//	x.style.backgroundColor = "white";
-//	y.style.opacity = 1;
-//	y.style.height = "47%";
-//	y.style.backgroundColor = "white";
-//}
-
+$(document).ready(function () {
+	var movementStrength = 25;
+	var height = movementStrength / $(window).height();
+	var width = movementStrength / $(window).width();
+	$("#container").mousemove(function (e) {
+		if ($(window).width() > 768) {
+			var pageX = e.pageX - ($(window).width() / 2);
+			var pageY = e.pageY - ($(window).height() / 2);
+			var newvalueX = width * pageX * -1 - 25;
+			var newvalueY = height * pageY * -1 - 50;
+			$('#container').css("background-position", newvalueX + "px     " + newvalueY + "px");
+		}
+	});
+});
 
 function opacityfull(id1, id2) {
 	var x = document.getElementById(id1);

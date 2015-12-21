@@ -58,7 +58,14 @@ footer ul li a {
 }
 
 #container {
-	background-color: grey;
+	background: url('../images/oat_tower.png') no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	height: 100%;
+	background-size: calc(100% + 50px);
 }
 
 .top_logos {
@@ -161,15 +168,15 @@ footer ul li a {
 
 #category_softcat {
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 35%;
+	top: 36.4%;
 	/*	left: 16%;*/
 	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -181,14 +188,14 @@ footer ul li a {
 #category_hardcat {
 	padding: 2px 6px;
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 41%;
+	top: 42.5%;
 	/*	left: 16%;*/
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -199,15 +206,15 @@ footer ul li a {
 
 #category_designcat {
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 47%;
+	top: 48.5%;
 	/*	left: 16%;*/
 	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -218,15 +225,15 @@ footer ul li a {
 
 #category_papercat {
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 53%;
+	top: 54.5%;
 	/*	left: 16%;*/
 	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -237,15 +244,15 @@ footer ul li a {
 
 #category_quizcat {
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 59%;
+	top: 60.5%;
 	/*	left: 16%;*/
 	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -256,15 +263,15 @@ footer ul li a {
 
 #category_spaccat {
 	background-color: #00031f;
-	height: 5%;
+	height: 2em;
 	/*	width: 11%;*/
 	position: fixed;
-	top: 65%;
+	top: 66.5%;
 	/*	left: 16%;*/
 	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
-	font-size: 75%;
+	font-size:100%;
 	text-align: center;
 	line-height: 220%;
 }
@@ -1074,9 +1081,21 @@ footer ul li a {
 		font-size: 75%
 	}
 }*/
+
 .nodes {
-	cursor: pointer
+	cursor: pointer;
+	width: 1em !important;
+	height: 1em !important;
 }
-.lines, .titles {
+
+.lines,
+.titles {
 	z-index: 9999
+}
+@media screen and (max-width:768px){
+	#container {
+		background-size: 100% 100% !important;
+		width: 100%;
+		height: 100%;
+	}
 }
