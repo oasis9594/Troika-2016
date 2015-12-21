@@ -7,16 +7,77 @@ p {
 	line-height: 100%;
 	margin-top: -.5em;
 }
+
+header {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+	background-color: transparent;
+	z-index: 100;
+}
+
+footer {
+	width: 100%;
+	height: 1.5em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	/*	background-color: hsla(0, 100%, 100%, 0.5);*/
+	font-family: 'Raleway';
+	font-weight: 700
+}
+
+footer ul {
+	width: auto;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	background-color: hsla(0, 100%, 100%, 0.5);
+}
+
+footer ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0.2em;
+	width: auto;
+	text-align: center;
+}
+
+footer ul li a {
+	text-decoration: none;
+	padding: 0.1em;
+	margin: 0;
+	text-align: center;
+	font-size: 1em;
+	color: black;
+}
+
 #container {
 	background-color: grey;
 }
 
+.top_logos {
+	position: fixed;
+	top: 0.1em;
+	margin: 0;
+	padding: 0;
+}
+
+#ieeeedtu {
+	left: 2%;
+}
+
+#troikaSmall {
+	left: calc(50% - 40px);
+}
+
 #dtu {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0%;
-	left: 0%;
+	right: 2%;
 }
 
 #bg {
@@ -101,10 +162,11 @@ p {
 #category_softcat {
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 35%;
-	left: 16%;
+	/*	left: 16%;*/
+	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -117,12 +179,13 @@ p {
 }
 
 #category_hardcat {
+	padding: 2px 6px;
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 41%;
-	left: 16%;
+	/*	left: 16%;*/
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -137,10 +200,11 @@ p {
 #category_designcat {
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 47%;
-	left: 16%;
+	/*	left: 16%;*/
+	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -155,10 +219,11 @@ p {
 #category_papercat {
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 53%;
-	left: 16%;
+	/*	left: 16%;*/
+	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -173,10 +238,11 @@ p {
 #category_quizcat {
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 59%;
-	left: 16%;
+	/*	left: 16%;*/
+	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -191,10 +257,11 @@ p {
 #category_spaccat {
 	background-color: #00031f;
 	height: 5%;
-	width: 11%;
+	/*	width: 11%;*/
 	position: fixed;
 	top: 65%;
-	left: 16%;
+	/*	left: 16%;*/
+	padding: 2px 6px;
 	border-radius: 10%;
 	color: white;
 	font-size: 75%;
@@ -907,7 +974,7 @@ p {
 	width: 0%;
 	position: fixed;
 	top: 14%;
-	left: 77%;
+	left: 57%;
 	background-color: grey;
 	opacity: 0;
 	transition: .8s all;
@@ -996,6 +1063,7 @@ p {
 	background-color: #202020;
 	border-radius: 3px;
 }
+
 
 /*@media screen and (max-width:768px){
 	h2 {
