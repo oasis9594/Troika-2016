@@ -1074,3 +1074,9 @@ footer ul li a {
 		font-size: 75%
 	}
 }*/
+.nodes {
+	cursor: pointer
+}
+.lines, .titles {
+	z-index: 9999
+}
