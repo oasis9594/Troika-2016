@@ -24,6 +24,17 @@ function opacityfull(id1, id2) {
 	y.style.height = "31%";
 	y.style.backgroundColor = "white";
 }
+function opacityfull2(id1, id2) {
+	var x = document.getElementById(id1);
+	var y = document.getElementById(id2);
+	x.style.opacity = .6;
+	x.style.height = "15%";
+	x.style.width = "20%";
+	x.style.backgroundColor = "white";
+	y.style.opacity = 1;
+	y.style.height = "20%";
+	y.style.backgroundColor = "white";
+}
 
 //
 //
@@ -66,7 +77,7 @@ $(window).load(function () {
 		console.log(no);
 		switch (no) {
 		case 1:
-			opacityfull('nname1', 'nline1');
+			opacityfull2('nname1', 'nline1');
 			break;
 		case 2:
 			opacityfull('nname6', 'nline5');
