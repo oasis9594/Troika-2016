@@ -102,3 +102,9 @@
 	-o-transform: scale(1.5);
 	transform: scale(1.5);
 }
+
+@media all and (max-width:768px) {
+	.jcider-nav{
+		display: none
+	}
+}
