@@ -7,7 +7,10 @@ p {
 	line-height: 100%;
 	margin-top: -.5em;
 }
-
+a {
+	text-decoration: none;
+	color: inherit;
+}
 header {
 	width: 100%;
 	height: auto;

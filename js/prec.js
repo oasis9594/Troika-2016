@@ -35,29 +35,22 @@ function opacityfull2(id1, id2) {
 	y.style.height = "20%";
 	y.style.backgroundColor = "white";
 }
-
-//
-//
-//function opacityzero(id1, id2) {
-//	var x = document.getElementById(id1);
-//	var y = document.getElementById(id2);
-//	x.style.opacity = 0;
-//	x.style.height = "70px";
-//	x.style.width = "0px";
-//	x.style.backgroundColor = "white";
-//	y.style.opacity = 0;
-//	y.style.opacity = 0;
-//	y.style.height = "220px";
-//	y.style.backgroundColor = "white";
-//}
-
+function opacityfull3(id1, id2) {
+	var x = document.getElementById(id1);
+	var y = document.getElementById(id2);
+	x.style.opacity = .6;
+	x.style.height = "15%";
+	x.style.width = "30%";
+	x.style.backgroundColor = "white";
+	y.style.opacity = 1;
+	y.style.height = "20%";
+	y.style.backgroundColor = "white";
+}
 
 function bgcolor(id) {
 	var x = document.getElementById(id);
 	x.style.backgroundColor = "white";
 }
-
-
 
 function bgcolorout(id) {
 	var x = document.getElementById(id);
@@ -89,7 +82,7 @@ $(window).load(function () {
 			opacityfull('nname10', 'nline9');
 			break;
 		case 5:
-			opacityfull('nname5', 'nline10');
+			opacityfull3('nname5', 'nline10');
 			break;
 		case 6:
 			opacityfull('nname2', 'nline2');
@@ -110,7 +103,7 @@ $(window).load(function () {
 			opacityfull('nname11', 'nline12');
 			break;
 		case 12:
-			opacityfull('nname12', 'nline11');
+			opacityfull3('nname12', 'nline11');
 			break;
 		case 13:
 			opacityfull('nname13', 'nline13');
