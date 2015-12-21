@@ -9,4 +9,8 @@ $(document).ready(function () {
 		var newvalueY = height * pageY * -1 - 50;
 		$('#content').css("background-position", newvalueX + "px     " + newvalueY + "px");
 	});
+	$('.slider').jcider({
+		"autoplay":true,
+		"looping":true
+	});
 });
