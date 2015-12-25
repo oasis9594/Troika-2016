@@ -76,6 +76,7 @@ a {
 	z-index: 0;
 	height: 100%;
 	background-size: calc(100% + 50px);
+	overflow: auto
 }
 
 footer {
@@ -130,7 +131,7 @@ footer ul li a:hover {
 	right: 25%;
 	background-color: hsla(0, 100%, 100%, 0.5);
 	border-radius: 10px;
-	padding: 1em
+	padding: 1em;
 }
 
 .browse {
@@ -190,7 +191,7 @@ div.browse:nth-of-type(2):hover {
 	font-family: Nunito;
 	font-weight: 400;
 	font-size: 1.2em;
-	text-align: justify
+	text-align: justify;
 }
 
 .subhead {
@@ -221,6 +222,42 @@ div.browse:nth-of-type(2):hover {
 	background-size: 80%;
 }
 
+.alert {
+	float: right;
+}
+
+fieldset {
+	border: thin solid black;
+	border-radius: 10px;
+}
+
+tr {
+	height: 1.5em;
+}
+
+textarea,
+input {
+	font-family: "Courier New", Courier, monospace;
+	resize: none;
+	border-width: 2px;
+	border-color: hsla(255, 100%, 80%, 0.8)
+}
+
+input[type="submit"] {
+	font-family: Georgia;
+	background-color: hsla(278, 100%, 90%, 0.9)
+}
+
+input[type="submit"]:hover {
+	background-color: hsla(278, 100%, 80%, 0.9)
+}
+
+#contact section {
+	margin: 2em;
+	padding: 0.5em;
+	font-family: Nunito;
+}
+
 #welcome ul.social li {
 	display: inline-block;
 	padding: 0.1em;
@@ -246,7 +283,14 @@ div.browse:nth-of-type(2):hover {
 	footer ul li a {
 		font-size: 0.5em
 	}
-	#welcome ul{
+	#welcome {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	#welcome ul {
 		padding: 0
 	}
 	#welcome ul.people li {
