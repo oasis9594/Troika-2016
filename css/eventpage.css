@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Nunito);
+body {
+	padding-top: 70px;
+	font-family: 'Nunito'
+}
+.navbar-brand {
+	padding: 0;
+	margin: 0.5em auto 0;
+}
+#navbar ul {
+	margin-left: 1em
+}
+#navbar ul li {
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: 0.2em
+}
+.jumbotron {
+	padding-top: 0.5em;
+}
+.jumbotron h1,.jumbotron h2 {
+	font-family: 'Raleway';
+	font-weight: 500;
+}
+.jumbotron p {
+	font-family: Nunito;
+	font-size: 1.2em;
+	text-align: justify
+}
+.jumbotron blockquote {
+	font-family: 'Open Sans'
+}
+.btn {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
