@@ -17,6 +17,7 @@ function opacityfull(id1, id2) {
 	var x = document.getElementById(id1);
 	var y = document.getElementById(id2);
 	x.style.opacity = .6;
+	x.style.zIndex = 9999;
 	x.style.height = "15%";
 	x.style.width = "20%";
 	x.style.backgroundColor = "white";
@@ -28,6 +29,7 @@ function opacityfull2(id1, id2) {
 	var x = document.getElementById(id1);
 	var y = document.getElementById(id2);
 	x.style.opacity = .6;
+	x.style.zIndex = 9999;
 	x.style.height = "15%";
 	x.style.width = "20%";
 	x.style.backgroundColor = "white";
@@ -39,11 +41,12 @@ function opacityfull3(id1, id2) {
 	var x = document.getElementById(id1);
 	var y = document.getElementById(id2);
 	x.style.opacity = .6;
+	x.style.zIndex = 9999;
 	x.style.height = "15%";
 	x.style.width = "30%";
 	x.style.backgroundColor = "white";
 	y.style.opacity = 1;
-	y.style.height = "20%";
+	y.style.height = "32%";
 	y.style.backgroundColor = "white";
 }
 
@@ -59,7 +62,9 @@ function bgcolorout(id) {
 $(window).load(function () {
 	function hideAll() {
 		$(".lines").css("opacity", "0");
+		$(".lines").css("zIndex", "0");
 		$(".titles").css("opacity", "0");
+		$(".titles").css("zIndex", "0");
 	}
 
 	$(".nodes").click(function (e) {
