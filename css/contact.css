@@ -68,7 +68,7 @@ a {
 }
 
 #content {
-	background: url('../images/oat_tower.png') no-repeat;
+/*	background: url('../images/oat_tower.png') no-repeat;*/
 	position: fixed;
 	top: 0;
 	left: 0;
