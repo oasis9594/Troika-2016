@@ -74,6 +74,7 @@ a {
 	z-index: 0;
 	height: 100%;
 	background-size: calc(100% + 50px);
+	overflow: auto
 }
 
 footer {
@@ -136,7 +137,17 @@ footer ul li a:hover {
 	margin: 1em auto;
 	width: 45%;
 }
-
+#welcome button {
+	display: block;
+	margin: 1em auto;
+	background: Green;
+	border: none;
+	border-radius: 5px;
+	box-shadow: none;
+	font-family: 'Nunito';
+	font-size: 1em;
+	padding: 0.7em;
+}
 .browse {
 	display: block;
 	margin: 1.5em auto;
@@ -203,6 +214,13 @@ div.browse:nth-of-type(2):hover{
 	footer ul li a{
 		font-size: 0.5em
 	}
+	#welcome {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
 	#welcome img {
 		width: 100%;
 	}
@@ -211,7 +229,7 @@ div.browse:nth-of-type(2):hover{
 	font-family: Nunito;
 	font-weight: 400;
 	font-size: 1.2em;
-	text-align: justify
+	text-align: justify;
 }
 
 .subhead {

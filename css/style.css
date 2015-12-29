@@ -64,14 +64,15 @@ a {
 }
 
 #content {
-/*	background: url('../images/oat_tower.png') no-repeat;*/
+/*	background: url('../images/oat_tower.svg') no-repeat;*/
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 0;
 	height: 100%;
-	background-size: calc(100% + 50px);
+	background-size: 50%;
+	background-position: center center
 }
 
 footer {
