@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Nunito);
 body {
-	overflow: hidden
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
 }
 header {
 	width: 100%;

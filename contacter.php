@@ -1,5 +1,5 @@
 <?php
-require ('PHPMailer-5.2.14/PHPMailerAutoload.php');
+require ('./PHPMailer-5.2.14/PHPMailerAutoload.php');
 
 $name = $_POST["user_name"];//Got the name
 $email = $_POST["user_email"];//Got the email
@@ -13,8 +13,9 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'mailman@dcetech.com';                 // SMTP username
 $mail->Password = '19271201';                           // SMTP password
 
-$mail->setFrom('Someone', 'Mailer');
+$mail->setFrom('Troika Website', 'Mailer');
 $mail->addAddress('contact@ieeedtu.com', 'IEEE Council');     // Add a recipient
+$mail->addCC('ontenth@gmail.com');     ///Cuz it loves spam
 $mail->Subject = $subject;
 $mail->Body    = "From : $name ($email)\nMessage : $content";
 //$mail->AltBody = $content;

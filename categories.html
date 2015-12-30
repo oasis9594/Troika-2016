@@ -156,9 +156,11 @@
 					left: 0
 				}, 400);
 			});
+			$(".subhead, .categories").css("opacity","0");
 
 		});
 		$('#close').click(function (e) {
+			$(".subhead, .categories").css("opacity","1");
 			$('.eventList').animate({
 				left: "200%"
 			}, 400, function(){

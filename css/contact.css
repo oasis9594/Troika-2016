@@ -242,16 +242,14 @@ tr {
 
 textarea,
 input {
-	font-family: "Courier New", Courier, monospace;
 	resize: none;
-	border-width: 2px;
-/*	border-color: hsla(255, 100%, 80%, 0.8)*/
+	padding: 8px;
 }
 
 input[type="submit"] {
 	font-family: Nunito;
 	font-size: 1em;
-	background-color: green;
+	background-color: rgba(42, 99, 170, 0.84);
 	padding: 0.5em;
 	border: none;
 	border-radius: 5px;
@@ -259,7 +257,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: lightgreen
+	background-color: rgba(42, 99, 170, 1)
 }
 
 #contact section {
