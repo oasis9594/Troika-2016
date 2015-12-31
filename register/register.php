@@ -245,8 +245,8 @@ else //form to be rendered to be first time
     }
 ?>
 
-					<form method="POST" action="<?php echo $_SERVER[" PHP_SELF "]; ?>" autocomplete="off">
-						<input type="hidden" name="formid" value="<?php echo $_SESSION[" formid "]; ?>" />
+					<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" autocomplete="off">
+						<input type="hidden" name="formid" value="<?php echo $_SESSION['formid']; ?>" />
 						<div class="Description">
 							<p class="event">Events:</p>
 							<input type="checkbox" name="bits" value="Yes">BITS
