@@ -11,7 +11,7 @@ session_start();
 
 		<head>
 			<title>Troika 16 Registration Form</title>
-			
+
 			<meta name="viewport" content="width=device-width">
 			<script src="../lib/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
 			<script src="js/formhelp.js"></script>
@@ -19,7 +19,7 @@ session_start();
 			<link rel="stylesheet" type="text/css" href="css/register.css">
 		</head>
 
-		<body onload="loadfunction()">
+		<body onload="loadfunction()" onunload="savefunction()">
 			<div class="form">
 				<header>Troika 16 Registration Form</header>
 				<?php
@@ -245,7 +245,7 @@ else //form to be rendered to be first time
     }
 ?>
 
-					<form method="POST" action="<?php echo $_SERVER[" PHP_SELF "]; ?>" onchange="savefunction()" autocomplete="off">
+					<form method="POST" action="<?php echo $_SERVER[" PHP_SELF "]; ?>" autocomplete="off">
 						<input type="hidden" name="formid" value="<?php echo $_SESSION[" formid "]; ?>" />
 						<div class="Description">
 							<p class="event">Events:</p>
@@ -276,68 +276,76 @@ else //form to be rendered to be first time
 							<br>
 							<br> Team Strength
 							<select name="strength" required>
-								<option value="1">1</option>
+								<option value="1" selected>1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 								<option value="4">4</option>
 							</select>
 						</div>
 						<br>
-						<div class="mhead"> Member 1 </div>
-						<br>
-						<div class="m">
-							Name:
-							<input type="text" name="name1" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" required title="Name must contain only alphabets and spaces">
-							<br> Contact Number:
-							<input type="number" name="contact1" maxlength="10" placeholder="10 digits" required>
-							<br> Email:
-							<input type="email" name="email1" maxlength="50" placeholder="" required>
-							<br> College Name:
-							<input type="text" name="college1" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" required title="Name must contain only alphabets and spaces">
+						<section>
+							<div class="mhead"> Member 1 </div>
 							<br>
-						</div>
+							<div class="m">
+								Name:
+								<input type="text" name="name1" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" required title="Name must contain only alphabets and spaces">
+								<br> Contact Number:
+								<input type="number" name="contact1" maxlength="10" placeholder="10 digits" required>
+								<br> Email:
+								<input type="email" name="email1" maxlength="50" placeholder="" required>
+								<br> College Name:
+								<input type="text" name="college1" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" required title="Name must contain only alphabets and spaces">
+								<br>
+							</div>
+						</section>
 						<br>
-						<div class="mhead"> Member 2 </div>
-						<br>
-						<div class="m">
-							Name:
-							<input type="text" name="name2" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
-							<br> Contact Number:
-							<input type="number" name="contact2" maxlength="10" placeholder="10 digits">
-							<br> Email:
-							<input type="email" name="email2" maxlength="50" placeholder="">
-							<br> College Name:
-							<input type="text" name="college2" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+						<section>
+							<div class="mhead"> Member 2 </div>
 							<br>
-						</div>
+							<div class="m">
+								Name:
+								<input type="text" name="name2" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
+								<br> Contact Number:
+								<input type="number" name="contact2" maxlength="10" placeholder="10 digits">
+								<br> Email:
+								<input type="email" name="email2" maxlength="50" placeholder="">
+								<br> College Name:
+								<input type="text" name="college2" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+								<br>
+							</div>
+						</section>
 						<br>
-						<div class="mhead"> Member 3 </div>
-						<br>
-						<div class="m">
-							Name:
-							<input type="text" name="name3" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
-							<br> Contact Number:
-							<input type="number" name="contact3" maxlength="10" placeholder="10 digits">
-							<br> Email:
-							<input type="email" name="email3" maxlength="50" placeholder="">
-							<br> College Name:
-							<input type="text" name="college3" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+						<section>
+							<div class="mhead"> Member 3 </div>
 							<br>
-						</div>
+							<div class="m">
+								Name:
+								<input type="text" name="name3" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
+								<br> Contact Number:
+								<input type="number" name="contact3" maxlength="10" placeholder="10 digits">
+								<br> Email:
+								<input type="email" name="email3" maxlength="50" placeholder="">
+								<br> College Name:
+								<input type="text" name="college3" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+								<br>
+							</div>
+						</section>
 						<br>
-						<div class="mhead"> Member 4 </div>
-						<br>
-						<div class="m">
-							Name:
-							<input type="text" name="name4" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
-							<br> Contact Number:
-							<input type="number" name="contact4" maxlength="10" placeholder="10 digits">
-							<br> Email:
-							<input type="email" name="email4" maxlength="50" placeholder="">
-							<br> College Name:
-							<input type="text" name="college4" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+						<section>
+							<div class="mhead"> Member 4 </div>
 							<br>
-						</div>
+							<div class="m">
+								Name:
+								<input type="text" name="name4" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces">
+								<br> Contact Number:
+								<input type="number" name="contact4" maxlength="10" placeholder="10 digits">
+								<br> Email:
+								<input type="email" name="email4" maxlength="50" placeholder="">
+								<br> College Name:
+								<input type="text" name="college4" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces">
+								<br>
+							</div>
+						</section>
 						<br>
 						<br>
 						<input type="checkbox" name="accomodation" value="yes"> Accomodation
