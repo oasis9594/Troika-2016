@@ -1,0 +1,9 @@
+
+
+1. Change DB info
+2. Disable debugging of SQL Error
+3. Disable debugging of PHPMAILER --> //Enable SMTP debugging. $mail->SMTPDebug = 3;  //PUT=0
+4. Change username and password and PHPMailer in mailermodule.php
+Misc
+5. Enhance the security of the teamcheck script
+6. Add mail feature for CSRF block
