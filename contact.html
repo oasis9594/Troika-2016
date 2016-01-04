@@ -2,9 +2,8 @@
 <html>
 
 <head>
-	<title>Troika 16</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="lib/jcider/jcider.css">
+	<title>Contact Us | Troika '16</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 
@@ -17,8 +16,8 @@
 		</header>
 		<div id="content">
 			<div id="button">
-				<div id="teaser"><a href="soon.html" target="_blank">Teaser</a></div>
-				<div id="register"><a href="soon.html" target="_blank">Register</a></div>
+				<div id="teaser"><a href="https://www.youtube.com/user/ieeedtu" target="_blank">Teaser</a></div>
+				<div id="register"><a href="register/register.php" target="_blank">Register</a></div>
 			</div>
 			<div id="welcome">
 				<h2 class="subhead">Contact Us</h2>
@@ -31,7 +30,7 @@
 -->
 				<div id="contact">
 					<section>
-						<p>If you want to provide a feedback, or report any bug or issue with the site, or have any other query, just fill out the form below and I'll get in touch.</p>
+						<p>If you want to provide a feedback, or have any other query, or report any bug or issue with the site, you can mail us at <a href="mailto:contact@ieeedtu.com?subject=Response%20From%20Website" style="text-decoration:underline">contact@ieeedtu.com</a>, or simply fill out the form below and we'll get in touch.</p>
 						<form action="contacter.php" method="post" enctype="application/x-www-form-urlencoded">
 							<fieldset>
 								<table style="width:90%;">
@@ -84,23 +83,14 @@
 					</section>
 				</div>
 				<ul class="social">
-					<li><img src="images/logos/facebook.png" width="50"></li>
-					<li><img src="images/logos/twitter.png" width="50"></li>
-					<li><img src="images/logos/icon-gplus.svg" width="50"></li>
-					<li><img src="images/logos/youtube.png" width="50"></li>
-					<li><img src="images/logos/wordpress.png" width="50"></li>
+					<li><img src="images/logos/facebook.png" width="50" onclick="window.open('https://www.facebook.com/TroikaIeeeDTU')"></li>
+					<li><img src="images/logos/twitter.png" width="50" onclick="window.open('https://twitter.com/ieeedtu')"></li>
+					<li><img src="images/logos/icon-gplus.svg" width="50"  onclick="window.open('https://plus.google.com/113689197872462113412/about')"></li>
+					<li><img src="images/logos/youtube.png" width="50" onclick="window.open('https://www.youtube.com/user/ieeedtu')"></li>
+					<li><img src="images/logos/wordpress.png" width="50" onclick="window.open('https://dtuieee.wordpress.com/')"></li>
 					<li><img src="images/logos/instagram.png" width="50"></li>
 				</ul>
 			</div>
-			<!--
-			<section class="slider">
-				<div>
-					<div class="news"> Troika 2016 Website launched! </div>
-					<div class="news"> We have upped the ante, and the events details will be released soon! </div>
-					<div class="news"> adaad adadadd dadadsda ddasdad asdadsdda asdasdasda </div>
-				</div>
-			</section>
--->
 		</div>
 		<footer>
 			<ul>
@@ -108,14 +98,17 @@
 				<li><a href="soon.html">Schedule</a></li>
 				<li><a href="soon.html">Gallery</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="https://github.com/IEEEDTU/Troika-2016/blob/master/LICENSE.md">License</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
 				<li><a href="soon.html">Credits</a></li>
 			</ul>
 		</footer>
 	</div>
 	<script type="text/javascript" src="lib/jquery/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="lib/jcider/jcider.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script src="lib/three/three.min.js"></script>
+	<script src="lib/three/Projector.js"></script>
+	<script src="lib/three/CanvasRenderer.js"></script>
+	<script src="js/app.js"></script>
 	<!--
 	<audio loop autoplay>
 		<source src="music.mp3" type="audio/mpeg">

@@ -1,0 +1,73 @@
+<!--CSS-->
+<style>  
+    .outer-date{
+        width:400px; height:100px;
+        position: relative;
+    }
+    .inner-date{
+        height:100px; width: 150px; float:right; margin:0;
+        overflow: hidden;
+    }
+    .date{
+        height:100px; width: 150px; margin:0;
+        font-family: sans-serif; font-size: 100px; text-align: center;
+        position: relative;
+        
+    }
+    .date-contents{
+        width: 250px; border-bottom:solid 4px black; bottom: 25%; position:absolute; 
+        text-align: right;
+        font-family: sans-serif; font-size: 2em;
+    }
+</style>
+
+<!--HTML-->
+<div data-to_date="21" class="outer-date"> <!-- Change data-to_date to date to which you want to stop -->
+    <div class="date-contents" style="">2016, February</div> <!-- Change year and month here -->
+    
+    <div class="inner-date">
+        <div data-date="1" class="date" >1</div>
+        <div data-date="2" class="date" >2</div>
+        <div data-date="3" class="date" >3</div>
+        <div data-date="4" class="date" >4</div>
+        <div data-date="5" class="date" >5</div>
+        <div data-date="6" class="date" >6</div>
+        <div data-date="7" class="date" >7</div>
+        <div data-date="8" class="date" >8</div>
+        <div data-date="9" class="date" >9</div>
+        <div data-date="10" class="date" >10</div>
+        <div data-date="11" class="date" >11</div>
+        <div data-date="12" class="date" >12</div>
+        <div data-date="13" class="date" >13</div>
+        <div data-date="14" class="date" >14</div>
+        <div data-date="15" class="date" >15</div>
+        <div data-date="16" class="date" >16</div>
+        <div data-date="17" class="date" >17</div>
+        <div data-date="18" class="date" >18</div>
+        <div data-date="19" class="date" >19</div>
+        <div data-date="20" class="date" >20</div>
+        <div data-date="21" class="date" >21</div>
+        <div data-date="22" class="date" >22</div>
+        <div data-date="23" class="date" >23</div>
+        <div data-date="24" class="date" >24</div>
+        <div data-date="25" class="date" >25</div>
+        <div data-date="26" class="date" >26</div>
+        <div data-date="27" class="date" >27</div>
+        <div data-date="28" class="date" >28</div>
+        <div data-date="29" class="date" >29</div>
+        <div data-date="30" class="date" >30</div>
+        <div data-date="30" class="date" >31</div>    
+    </div>
+</div>
+
+<!--jQuery-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>  
+<script>
+    $(document).ready(function(){
+        //Copy this code to your javascript file.
+        var n = $('.outer-date').data("to_date");
+        for(var i = 1; i < n; i++){
+            $('.date').animate({top: "-=100"}, 100); 
+        }
+    });
+</script>

@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Nunito);
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	margin: 0;
+}
+header {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+	background-color: transparent;
+	z-index: 100;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.top_logos {
+	position: fixed;
+	top: 0.1em;
+	margin: 0;
+	padding: 0;
+}
+
+#ieeeedtu {
+	left: 2%;
+}
+
+#dtu {
+	right: 2%;
+}
+
+#troika {
+	position: absolute;
+	left: 50%;
+}
+#troikaSmall {
+	left: calc(50% - 40px);
+}
+#button {
+	position: fixed;
+	right: 0;
+	font-size: 1.5em;
+	top: 60%;
+	transform: rotate(90deg);
+	display: inline;
+	transform-origin: 90% 50%;
+	margin-right: 4px;
+	font-family: 'Open Sans';
+	background-color: hsla(0, 100%, 100%, 0.5);
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+#teaser {
+	display: inline;
+	border-top: 2px solid #2962C0;
+	margin-right: 20px;
+}
+
+#register {
+	display: inline;
+	border-top: 2px solid #832F2B;
+}
+
+#content {
+/*	background: url('../images/oat_tower.png') no-repeat;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	height: 100%;
+	background-size: calc(100% + 50px);
+	overflow: auto
+}
+
+footer {
+	width: 100%;
+	height: 1.5em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	/*	background-color: hsla(0, 100%, 100%, 0.5);*/
+	font-family: 'Raleway';
+	font-weight: 700
+}
+
+footer ul {
+	width: auto;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	background-color: hsla(0, 100%, 100%, 0.5);
+}
+
+footer ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0.2em;
+	width: auto;
+	text-align: center;
+}
+
+footer ul li a {
+	text-decoration: none;
+	padding: 0.1em;
+	margin: 0;
+	text-align: center;
+	font-size: 1em;
+	color: black;
+}
+
+
+/*
+footer ul li a:hover {
+	color: #ccc;
+}*/
+
+#welcome {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	top: 20%;
+	left: 25%;
+	right: 25%;
+	background-color: hsla(0, 100%, 100%, 0.5);
+	border-radius: 10px;
+	padding: 1em
+}
+
+#welcome img {
+	display: block;
+	margin: 1em auto;
+	width: 45%;
+}
+#welcome button {
+	display: block;
+	margin: 1em auto;
+	background: hsla(217, 65%, 46%, 0.84);
+	transition: all 0.8s;;
+	border: none;
+	border-radius: 5px;
+	box-shadow: none;
+	font-family: 'Nunito';
+	font-size: 1em;
+	padding: 0.7em;
+}
+
+.slider {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	width: 80%;
+	height: 70px;
+}
+
+.news {
+	width: 100%;
+	height: 100%;
+	padding-top: 0.5em;
+	border-radius: 5px;
+	background-color: hsla(0, 100%, 100%, 0.5);
+	text-align: center;
+	color: black;
+	font-family: Raleway;
+	font-weight: 700;
+}
+
+h2
+{
+	font-family: Raleway;
+	text-align:center;
+	font-size:32px;
+	/*color:#4bb1bd;*/
+}
+
+
+
+td {
+	font-family:Nunito;
+	
+}
+
+
+@media screen and (max-width:768px){
+	#content {
+		background-size: 100% 100% !important;
+		width: 100%;
+		height: 100%;
+	}
+	.slider {
+		height: 100px;
+	}
+	.news {
+		padding: 4px;
+		overflow-y: auto
+	}
+	footer ul li a{
+		font-size: 0.5em
+	}
+	#welcome {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	#welcome img {
+		width: 100%;
+	}
+}
+.content {
+	font-family: Nunito;
+	font-weight: 400;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.subhead {
+	text-align: center;
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 2em
+}

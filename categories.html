@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Events | Troika '16</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/categories.css">
+</head>
+
+<body>
+	<div id="top-image">
+		<header>
+			<a href="http://ieee.dcetech.com"><img src="images/ieeelogo.svg" width="80" class="top_logos" id="ieeeedtu"></a>
+			<a href="index.html"><img src="images/troika_logo_small.svg" width="80" class="top_logos" id="troikaSmall"></a>
+			<a href="http://dtu.ac.in"><img src="images/dtulogo.png" width="80" class="top_logos" id="dtu"></a>
+		</header>
+		<div id="content">
+			<div id="button">
+				<div id="teaser"><a href="https://www.youtube.com/user/ieeedtu" target="_blank">Teaser</a></div>
+				<div id="register"><a href="register/register.php" target="_blank">Register</a></div>
+			</div>
+			<div id="welcome">
+				<h1 class="subhead">Event Categories</h1>
+				<section class="categories">
+					<h2 class="catName" data-cat="soft">Technical Software</h2>
+					<h2 class="catName" data-cat="hard">Technical Hardware</h2>
+					<h2 class="catName" data-cat="paper">Paper Presentation</h2>
+					<h2 class="catName" data-cat="quiz">Quizzing &amp; Marketing</h2>
+					<h2 class="catName" data-cat="conf">Conference</h2>
+					<h2 class="catName" data-cat="dp">Designing</h2>
+				</section>
+				<section class="eventList">
+					<span id="close"></span><div class="listHead">
+						<h1 id="categoryHeading"></h1>
+					</div>
+					<div class="titles"><h2><a target="_blank" href="" id="eventTitleLink"></a></h2><p id="tagLine"></p></div>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="soon.html">Schedule</a></li>
+				<li><a href="soon.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+				<li><a href="soon.html">Credits</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script type="text/javascript" src="lib/jquery/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript">
+		var itin = {
+			"soft": [
+				{
+					"ev": "Bits",
+					"tl": "Classical Programming",
+					"link": "events/software/bits.html"
+				},
+				{
+					"ev": "Bytes",
+					"tl": "The complexity of Space-Time",
+					"link": "events/software/bytes.html"
+				},
+				{
+					"ev": "Bots",
+					"tl": "Code Wars",
+					"link": "events/software/bots.html"
+				},
+				{
+					"ev": "Envision",
+					"tl": "Hack. Build. Develop",
+					"link": "events/software/envision.html"
+				}
+			],
+			"hard": [
+				{
+					"ev": "Radix",
+					"tl": "Robot Domination",
+					"link": "events/hardware/radix.html"
+				},
+				{
+					"ev": "Brainwave",
+					"tl": "Silicon and Logic",
+					"link": "events/hardware/brainwave.html"
+				},
+				{
+					"ev": "Electrocution",
+					"tl": "Power Play",
+					"link": "events/hardware/electrocution.html"
+				}
+			],
+			"paper": [
+				{
+					"ev": "Technovision",
+					"tl": "Platform Your Research",
+					"link": "events/paper/technovision.html"
+				}
+			],
+			"conf": [
+				{
+					"ev": "S-PAC",
+					"tl": "Talk That Inspires",
+					"link": "events/conf/spac.html"
+				}
+			],
+			"quiz": [
+				{
+					"ev": "Todo-en-Uno",
+					"tl": "Test Your IQ",
+					"link": "events/quizzing/todo.html"
+				},
+				{
+					"ev": "Mist",
+					"tl": "Break the obfuscation",
+					"link": "events/quizzing/mist.html"
+				},
+				{
+					"ev": "Bulls N\' Bears",
+					"tl": "From Dalal Street and Back, via Facebook",
+					"link": "events/quizzing/bnb.html"
+				}
+			],
+			"dp": [
+				{
+					"ev": "Design Pro",
+					"tl": "Where Art Meets Tech",
+					"link": "events/designing/designpro.html"
+				}
+			],
+		};
+		$('.catName').click(function (e) {
+			//Category Heading Set
+			var heading = $(this).text();
+			$("#categoryHeading").text(heading);
+			
+			//Find key
+			var thekey = [];
+			var cat = $(this).data("cat");
+			for (var prop in itin) {
+				if(prop == cat) {
+					thekey = itin[prop];
+					break;
+				}
+			}
+			
+			//Put the values in html
+			for(var i=0;i<thekey.length;i++) {
+				$(".eventList").append('<div class="titles"><h2><a target="_blank" href="'+thekey[i].link+'" id="eventTitleLink">'+thekey[i].ev+'</a></h2><p id="tagLine">'+thekey[i].tl+'</p></div>');
+			}
+			
+			$('#content').animate({
+				scrollTop: 0
+			}, 400, function () {
+				$('.eventList').animate({
+					left: 0
+				}, 400);
+			});
+			$(".subhead, .categories").css("opacity","0");
+
+		});
+		$('#close').click(function (e) {
+			$(".subhead, .categories").css("opacity","1");
+			$('.eventList').animate({
+				left: "200%"
+			}, 400, function(){
+				$(".titles").remove();
+			});
+		})
+	</script>
+	<script src="lib/three/three.min.js"></script>
+	<script src="lib/three/Projector.js"></script>
+	<script src="lib/three/CanvasRenderer.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
